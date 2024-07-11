@@ -302,27 +302,99 @@
                   </div>
                 </div>
               </div>
+              <style>
+                /* Basic styles for dropdown and container */
+.nav-item {
+    position: relative; /* Ensure relative positioning for dropdown */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000; /* Adjust as needed */
+    border-radius: 0px 0px 8px 8px;
+}
+
+.nav-link {
+    display: block; /* Ensure full link click area */
+    padding: 10px 15px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #333; /* Adjust link color */
+}
+
+/* Styles for dropdown content */
+.dropdown-menu.active {
+    display: block; /* Show on hover */
+}
+
+.header-revamp-container {
+    position: relative; /* Ensure relative positioning for absolute child */
+}
+
+.dropdown-hover-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-hover-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Adjust heading color */
+}
+
+.signup-login-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.signup-link,
+.login-link {
+    margin: 0 5px;
+    color: #007bff; /* Adjust link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover,
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    margin: 0 5px;
+    color: #333; /* Adjust divider color */
+}
+
+              </style>
               <div style="padding-bottom:0px;padding-top:2px;margin-right:0px" class="nav-item call-number dropdown">
                 <a href="tel:%201800-572-000" aria-haspopup="true" class="nav-link cursor-pointer dropdown-toggle" aria-expanded="false"> 
-                  <span>
-                     <img style="height:40px;width:40px" src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg" loading="lazy" alt="telephone">
-                  </span>
+                    <span>
+                        <img style="height:40px;width:40px" src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg" loading="lazy" alt="telephone">
+                    </span>
                 </a>
-                <div tabindex="-1" role="menu" style="border-radius:0px 0px 8px 8px !important;left:-135% !important" aria-hidden="true" 
-                 class="dropdown-menu">
-                  <div id="header-revamp" style="width:160px;border-radius:0 0 8px 8px !important">
-                    <div class="header-revamp-container" style="padding:15px 0px;display:flex;justify-content:center;align-items:center;width:100% !important">
-                      <ul>
-                        <li style="margin-bottom:0px">
-                          <a href="tel:%201800-572-000" rel="noreferrer"><div><span>1800-572-000</span>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div tabindex="-1" role="menu" style="border-radius:0px 0px 8px 8px !important;left:-135% !important" aria-hidden="true" class="dropdown-menu">
+                    <div id="header-revamp" style="width:160px;border-radius:0 0 8px 8px !important">
+                        <div class="header-revamp-container" style="padding:15px 0px;display:flex;justify-content:center;align-items:center;width:100% !important">
+                            <!-- New content structure -->
+                            <div class="dropdown-hover-content">
+                                <h3>Dashboard</h3>
+                                <div class="signup-login-links">
+                                    <a href="#" class="signup-link">Signup</a>
+                                    <span class="divider">|</span>
+                                    <a href="#" class="login-link">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
+            
               <div class="profile-revamp-wrapper" style="height:"><div style="display:flex;align-items:center;cursor:pointer;padding:12px 12px 12px 8px !important"><div><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="images/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27-%3e"></span><img alt="Profile picture" srcset="/_next/image/?url=https%3A%2F%2Fimages.leverageedu.com%2Fassets%2Fimg%2Fmale.png&amp;w=48&amp;q=75 1x, /_next/image/?url=https%3A%2F%2Fimages.leverageedu.com%2Fassets%2Fimg%2Fmale.png&amp;w=96&amp;q=75 2x" src="images/image-" decoding="async" data-nimg="intrinsic" class="rounded" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"></span></div></div></div></ul></div><div id="mySidenav" class="sidenav mobile-show"><a class="closebtn" href="leverageedu.html"><img src="images/home-cross.svg" alt="" loading="lazy"></a></div></nav></div><div class="navbar-mobile"><div class="navbar-mobile-container"><div class="navbar-mobile-mail-fold"><span class="navbar-brand" style="display:flex;justify-content:flex-start;align-items:flex-start"><a href="leverageedu.html" rel="noreferrer"><div id="leverage_logo"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:80px;height:38px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img alt="leverageedu logo_white" srcset="https://leverageeduhome.gumlet.io/logo-dark.svg 1x, https://leverageeduhome.gumlet.io/logo-dark.svg 2x" src="images/leverageeduhome.gumlet.io-logo-dark.svg" decoding="async" data-nimg="fixed" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span></div></a><a href="work-with-us.html" target="_self" rel="noreferrer" style="background:#E1F1FE;color:#0487F3;font-size:10px;font-weight:400;margin-left:5px;text-decoration:none;padding:1px 6px;border-radius:4px">We're hiring</a></span><div><div style="display:flex;align-items:center;margin-left:28px;height:56px"><a href="tel:%201800-572-000"><img style="height:18px;width:18px" src="images/landing-pages-mobile_wb.svg" loading="lazy" alt="telephone"></a><div class="profile-revamp-wrapper"><div style="display:flex;align-items:center;cursor:pointer;padding:12px 12px 12px 8px !important"><div><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="images/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27-%3e"></span><img alt="Profile picture" srcset="/_next/image/?url=https%3A%2F%2Fimages.leverageedu.com%2Fassets%2Fimg%2Fmale.png&amp;w=48&amp;q=75 1x, /_next/image/?url=https%3A%2F%2Fimages.leverageedu.com%2Fassets%2Fimg%2Fmale.png&amp;w=96&amp;q=75 2x" src="images/image-" decoding="async" data-nimg="intrinsic" class="rounded" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"></span></div></div></div><div id="" style="line-height:10px"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:18px;height:18px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img alt="hamburger" srcset="https://leverageeduhome.gumlet.io/Union.svg 1x, https://leverageeduhome.gumlet.io/Union.svg 2x" src="images/leverageeduhome.gumlet.io-Union.svg" decoding="async" data-nimg="fixed" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span></div></div></div></div><div class=""><div class="collapse navbar-collapse"><div id="searchbar-revamp"><img src="images/landing-pages-search_icon.png" loading="lazy" class="search_icon_desktop"><img src="images/landing-pages-search_gray.svg" loading="lazy" class="search_icon_mobile"><span class="placeholder">Search for universities &amp; courses</span></div><div class="mobile-dropdown-container"><div style="margin-top:15px;font-size:14px;color:#002147"><p>About Us</p></div><div class="mobile-dropdown-box"><span>Destinations</span><img src="images/landing-pages-arrow_new.svg" loading="lazy" alt="" class="arrow-down"></div><div class="collapse navbar-collapse"><div id="header-child-revamp-destination"><div class="header-child-revamp-destination-container"><ul><li><a href="study-in-usa.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/destinationFlags-usaFlag.jpg" loading="lazy"><span>USA</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-europe.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/EUFlag.png" loading="lazy"><span>Europe</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-uk.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/destinationFlags-ukFlag.jpg" loading="lazy"><span>UK</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-italy.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/italyFlag.png" loading="lazy"><span>Italy</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-ireland.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/destinationFlags-irelandFlag.jpg" loading="lazy"><span>Ireland</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-netherlands.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/netherlandsFlag.png" loading="lazy"><span>Netherlands</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-germany.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/destinationFlags-germanyFlag.jpg" loading="lazy"><span>Germany</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-poland.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/polandFlag.png" loading="lazy"><span>Poland</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-canada.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/destinationFlags-canadaFlag.jpg" loading="lazy"><span>Canada</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-spain.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/spainFlag.png" loading="lazy"><span>Spain</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-dubai.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/destinationFlags-dubaiFlag.jpg" loading="lazy"><span>Dubai</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-australia.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/destinationFlags-australiaFlag.jpg" loading="lazy"><span>Australia</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-france.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/franceFlag.png" loading="lazy"><span>France</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li><a href="study-in-new-zealand.html" target="_blank" rel="noreferrer"><div style="margin:2px 0px"><img style="object-fit:contain" src="images/destinationFlags-newzealandFlag.jpg" loading="lazy"><span>New Zealand</span></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li></ul></div></div></div><div class="mobile-dropdown-box"><span>Products</span><img src="images/landing-pages-arrow_new.svg" loading="lazy" alt="" class="arrow-down"></div><div class="collapse navbar-collapse"><div id="header-revamp" class="productsMenu" style="width:700px"><div class="header-revamp-container" style="display:flex;justify-content:space-between;align-items:flex-start"><ul class="productsMenuDropdowns"><li class="productsMenuDropdownsList"><a class="productsMenuDropdownsLink" href="one.html" style="width:320px" target="_blank" rel="noreferrer"><div class="productsMenuDropdownsInner" style="display:flex;align-items:center"><img class="productsMenuIcons" src="images/one-Leverage-One.png" loading="lazy"><div style="display:flex;flex-direction:column"><span>Leverage One<span style="background:#fae0e0;color:#d50000;font-size:10px;font-weight:400;margin-left:5px" class="badge badge-success">New</span></span><span class="sub-text">VIP Service for Global Citizens</span></div></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li class="productsMenuDropdownsList"><a class="productsMenuDropdownsLink" href="course-finder.html" style="width:320px" target="_blank" rel="noreferrer"><div class="productsMenuDropdownsInner" style="display:flex;align-items:center"><img class="productsMenuIcons" src="images/landing-pages-aicf_icon.svg" loading="lazy"><div style="display:flex;flex-direction:column"><span> AI University Course Finder<span style="background:#E0F8EA;color:#00C853;font-size:10px;font-weight:400;margin-left:5px" class="badge badge-success">Free</span></span><span class="sub-text">Find universities &amp; courses best-fit for you</span></div></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li class="productsMenuDropdownsList"><a class="productsMenuDropdownsLink" href="leverage-tv.html" style="width:320px" target="_blank" rel="noreferrer"><div class="productsMenuDropdownsInner" style="display:flex;align-items:center"><img class="productsMenuIcons" src="images/header-leverageTvHeaderIcon.png" loading="lazy"><div style="display:flex;flex-direction:column"><span>Leverage TV</span><span class="sub-text">Watch sessions on all things study abroad</span></div></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li><li class="productsMenuDropdownsList"><a class="productsMenuDropdownsLink" href="https://uniconnect.leverageedu.com/" style="width:320px" target="_blank" rel="noreferrer"><div class="productsMenuDropdownsInner" style="display:flex;align-items:center"><img class="productsMenuIcons" src="images/header-uniConnectHeaderIcon.png" loading="lazy"><div style="display:flex;flex-direction:column"><span>UniConnect</span><span class="sub-text">Interact directly with universities abroad</span></div></div><img class="arrowImg" src="images/landing-pages-arrow-right.svg" loading="lazy"></a></li></ul><div class="no-show"><div id="download-app"><div class="download-app-container"><div class="row1"><img src="images/university-logo.svg" loading="lazy"><div><span class="heading">Study Abroad with europass Edu App<!-- --> </span><span class="sub-heading">One app for all your study abroad needs</span></div></div><div class="row2"><img src="images/homepage-appqr.png" loading="lazy"></div><div class="row3"><div class="row3-box"><img src="images/lowerbanner-apple.png" loading="lazy"><div><span>Download on the</span><span>App Store</span></div></div><div class="row3-box"><img src="images/lowerbanner-play.png" loading="lazy"><div><span>GET IT ON</span><span>Google Play</span></div></div></div><div class="row4"><span>Scan QR Code to Download the Leverage Edu App</span></div></div></div></div></div></div></div>
                                   <div class="mobile-dropdown-box"><span>Test Prep</span>
                                     <img src="images/landing-pages-arrow_new.svg" loading="lazy" alt="" class="arrow-down">
